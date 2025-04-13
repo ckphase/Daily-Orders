@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Essentials Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-content">
+            <h1><span class="icon">📦</span> Daily Essentials</h1>
+            <button id="cartBtn" class="cart-btn">
+                🛒 Cart (<span id="cartCount">0</span>)
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <div id="productView">
+            <!-- Welcome Section -->
+            <section class="welcome-section">
+                <h2>Welcome to Daily Essentials</h2>
+                <p>Your one-stop shop for fresh, quality daily necessities delivered right to your doorstep.</p>
+            </section>
+
+            <!-- Services Section -->
+            <section class="services-section">
+                <h2>Our Services</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">🚚</div>
+                        <h3>Fast Delivery</h3>
+                        <p>Same day delivery in your area</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">⏰</div>
+                        <h3>24/7 Service</h3>
+                        <p>Shop anytime, anywhere</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">🛡️</div>
+                        <h3>Quality Assured</h3>
+                        <p>100% quality guarantee</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">💝</div>
+                        <h3>Best Prices</h3>
+                        <p>Competitive prices everyday</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Products Section -->
+            <section class="products-section">
+                <h2>Our Products</h2>
+                <div id="productsGrid" class="products-grid"></div>
+            </section>
+        </div>
+
+        <!-- Checkout View -->
+        <div id="checkoutView" class="hidden">
+            <div class="checkout-container">
+                <h2>Checkout</h2>
+                <div id="cartItems" class="cart-items"></div>
+                <div class="total-amount">
+                    <h3>Total: ₹<span id="totalAmount">0</span></h3>
+                </div>
+                <form id="checkoutForm" class="checkout-form">
+                    <div class="form-group">
+                        <label>👤 Full Name</label>
+                        <input type="text" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label>📧 Email</label>
+                        <input type="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label>📱 Phone</label>
+                        <input type="tel" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label>📍 Delivery Address</label>
+                        <textarea name="address" required rows="3"></textarea>
+                    </div>
+                    <div class="form-buttons">
+                        <button type="button" id="continueShoppingBtn" class="secondary-btn">Continue Shopping</button>
+                        <button type="submit" class="primary-btn">Place Order</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>Daily Essentials</h3>
+                    <p>Your trusted partner for quality daily necessities delivered to your doorstep.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p>
+                        Email: support@dailyessentials.com<br>
+                        Phone: +91 1234567890<br>
+                        Address: 123 Main Street, Mumbai, India
+                    </p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li>About Us</li>
+                        <li>Terms & Conditions</li>
+                        <li>Privacy Policy</li>
+                        <li>FAQs</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Daily Essentials. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
