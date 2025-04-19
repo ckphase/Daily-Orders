@@ -27,7 +27,56 @@ const products = [
         price: 180,
         image: "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&q=80&w=500",
         description: "Seasonal organic vegetables"
-    }
+    },
+    {
+        id: 5,
+        name: "Coffee",
+        price: 95,
+        image: "https://images.unsplash.com/photo-1559056199-641a0ac8b55e?auto=format&fit=crop&q=80&w=500",
+        description: "Premium roasted coffee beans"
+      },
+      {
+        id: 6,
+        name: "Cereal",
+        price: 85,
+        image: "https://images.unsplash.com/photo-1521483451569-e33803c0330c?auto=format&fit=crop&q=80&w=500",
+        description: "Whole grain cereal"
+      },
+      {
+        id: 7,
+        name: "Cheddar Cheese",
+        price: 85,
+        image: "https://images.unsplash.com/photo-1618164435735-413d3b066c9a?auto=format&fit=crop&q=80&w=500",
+        description: "Aged cheddar cheese"
+      },
+      {
+        id: 8,
+        name: "Tomatoes",
+        price: 45,
+        image: "https://images.unsplash.com/photo-1592924357228-91a4daadcfea?auto=format&fit=crop&q=80&w=500",
+        description: "Fresh ripe tomatoes"
+      },
+      {
+        id: 9,
+        name: "Rice",
+        price: 110,
+        image: "https://images.unsplash.com/photo-1516684732162-798a0062be99?auto=format&fit=crop&q=80&w=500",
+        description: "Premium long-grain rice"
+      },
+      {
+        id: 10,
+        name: "Butter",
+        price: 95,
+        image: "https://images.unsplash.com/photo-1589985270826-4b7bb135bc9d?auto=format&fit=crop&q=80&w=500",
+        description: "Fresh dairy butter"
+      },
+      {
+        id: 11,
+        name: "Olive Oil",
+        price: 85,
+        image: "https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?auto=format&fit=crop&q=80&w=500",
+        description: "Extra virgin olive oil"
+      },
 ];
 
 // State Management
@@ -152,7 +201,7 @@ Phone: ${formData.get('phone')}
 Address: ${formData.get('address')}
     `;
 
-    const mailtoLink = `mailto:orders@dailyessentials.com?subject=New Order&body=${encodeURIComponent(orderDetails)}`;
+    const mailtoLink = `mailto:rajraman6939@gmail.com?subject=New Order&body=${encodeURIComponent(orderDetails)}`;
     window.location.href = mailtoLink;
 });
 
