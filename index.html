@@ -141,18 +141,4 @@
 
     <script src="script.js"></script>
 </body>
-<script src="https://js.stripe.com/v3/"></script>
-                        <script>
-                        const stripe = Stripe('pk_test_YOUR_PUBLISHABLE_KEY'); // Replace this with your real key
-
-                        document.getElementById("checkout-button").addEventListener("click", function () {
-                            fetch("https://your-server.com/create-checkout-session", {
-                            method: "POST",
-                            })
-                            .then(res => res.json())
-                            .then(data => {
-                            stripe.redirectToCheckout({ sessionId: data.id });
-                            });
-                        });
-                        </script>
 </html>
